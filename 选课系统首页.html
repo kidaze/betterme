@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>选课系统</title>
+	<meta charset="utf-8">
+	<style>
+div{
+	text-align:center;
+	}
+#login{
+	text-align:center;
+	}
+#title{
+    font-size:33px;
+    }
+</style>
+</head>
+<body>
+<div id="title">
+<p>基于PHP的网上选课系统</p>
+</div>
+<div id="login">
+<form action="index.php" name="regist" method="post">
+        <div>用户名：<input type="text" name="name" /></div>
+        <div>密码：<input type="password" name="password" /></div>
+        <div>
+            <input type="submit" name="login" id="button" value="登陆" />
+            <input type="button"name="regist" id="button3" value="注册" onclick="regist()"/>
+        </div>
+    </form>
+</div>
+<div id=“identity”>
+<form action="index.php">
+<p>请选择您的身份：<br />
+<input type="radio" name="identity" value="student" checked="checked" /> 学生
+<input type="radio" name="identity" value="teacher" /> 老师
+<input type="radio" name="identity" value="administrator" /> 管理员
+</p>
+</form>
+</div>
+</body>
+</html>
